@@ -1,0 +1,125 @@
+body{
+    background: #e5e5e5e5;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightgray;
+}
+.headbox {
+    background-color: #cf2b2b;
+    width: 414px;
+    height: 92px;
+    padding-left: 21px;
+}
+.driveneats{
+    color: #ffffff;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    text-align: left;
+
+}
+.driveneats-{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: left;
+    margin: 0;
+}
+h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: 'Righteous';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: left;
+}
+.overflow{
+    overflow-x: scroll;
+    display: flex;
+    
+}
+
+img{
+    border-radius: 5px;
+    width: 144px;
+    height: 87px;
+   
+}
+.product{
+    background-color: #ffffff;
+    color: rgb(15, 15, 15);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 30px;
+    text-align: left;
+    border-color:#e5e5e5e5 ; 
+    box-shadow: 0 0 10px 0 #bbbbbb;
+    cursor: pointer;
+    border: 5px solid #e5e5e5e5;
+    width: 172px;
+    height: 216px;
+}
+.preco{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.butItem{
+    margin-top: 0%;
+    margin-right: 15px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(224, 12, 12);
+    width: 10%;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: x-large;
+    border-radius: 20px; 
+}
+.quant{
+    margin-top: 0%;
+    margin-bottom: 20px;
+    font-size: 23px;
+    
+}
+.descricao{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    background: #ffffff;
+    margin: 5px 0 0 0;
+
+
+
+}
+.finalizar{
+    margin-top: 20px;
+    background-color: rgb(34, 212, 34);
+    color: rgb(24, 22, 22);
+    border: none;
+    width: 70%;
+    height: 50px;
+    box-sizing: border-box;
+    font-size: x-large;
+    border-radius: 20px; 
+}
+
+h4{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333333;
+    margin: 0 0 0 0;
+}
