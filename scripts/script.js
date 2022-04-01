@@ -1,5 +1,58 @@
+function escolherFrango(){
+    document.getElementById("frango").style.borderColor = "#32b72f";
+    document.getElementById("carne").style.borderColor = "#e5e5e5";
+    document.getElementById("peixe").style.borderColor = "#e5e5e5";
+}
+function escolherCarne(){
+    document.getElementById("carne").style.borderColor = "#32b72f";
+    document.getElementById("frango").style.borderColor = "#e5e5e5";
+    document.getElementById("peixe").style.borderColor = "#e5e5e5";
+}
+function escolherPeixe(){
+    document.getElementById("peixe").style.borderColor = "#32b72f";
+    document.getElementById("carne").style.borderColor = "#e5e5e5";
+    document.getElementById("frango").style.borderColor = "#e5e5e5";
+}
+function escolherCocaN(){
+    document.getElementById("normal").style.borderColor = "#32b72f";
+    document.getElementById("zero").style.borderColor = "#e5e5e5";
+    document.getElementById("laranja").style.borderColor = "#e5e5e5";
+}
+function escolherCocaZ(){
+    document.getElementById("zero").style.borderColor = "#32b72f";
+    document.getElementById("normal").style.borderColor = "#e5e5e5";
+    document.getElementById("laranja").style.borderColor = "#e5e5e5";
+}
+function escolherSuco(){
+    document.getElementById("laranja").style.borderColor = "#32b72f";
+    document.getElementById("normal").style.borderColor = "#e5e5e5";
+    document.getElementById("zero").style.borderColor = "#e5e5e5";
+}
+function escolherPetit(){
+    document.getElementById("petit").style.borderColor = "#32b72f";
+    document.getElementById("brigadeiro").style.borderColor = "#e5e5e5";
+    document.getElementById("sorvete").style.borderColor = "#e5e5e5";
+}
+function escolherBrigadeiro(){
+    document.getElementById("brigadeiro").style.borderColor = "#32b72f";
+    document.getElementById("sorvete").style.borderColor = "#e5e5e5";
+    document.getElementById("petit").style.borderColor = "#e5e5e5";
+}
+function escolherSorvete(){
+    document.getElementById("sorvete").style.borderColor = "#32b72f";
+    document.getElementById("brigadeiro").style.borderColor = "#e5e5e5";
+    document.getElementById("petit").style.borderColor = "#e5e5e5";
+}
 
-var pedido ="";
+
+
+
+
+
+
+
+
+/*var pedido ="";
 var quantFrango = 0;
 var quantCarne =0;
 var quantCocaNormal =0;

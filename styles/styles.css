@@ -1,16 +1,25 @@
+
 body{
-    background: #e5e5e5e5;
+    background-color: #e5e5e5;
     margin-bottom: 10px;
     text-align: center;
     align-items: center;
     flex-direction: column;
-    background-color: lightgray;
+    width: 414px;
+    padding-top: 92px;
+    padding-bottom: 92px;
+    
 }
 .headbox {
     background-color: #cf2b2b;
     width: 414px;
     height: 92px;
     padding-left: 21px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+
 }
 .driveneats{
     color: #ffffff;
@@ -60,14 +69,16 @@ img{
     margin-bottom: 10px;
     margin-top: 10px;
     margin-right: 30px;
-    text-align: left;
-    border-color:#e5e5e5e5 ; 
+    text-align: left; 
     box-shadow: 0 0 10px 0 #bbbbbb;
     cursor: pointer;
-    border: 5px solid #e5e5e5e5;
+    border: 5px solid #e5e5e5;
     width: 172px;
     height: 216px;
+    
+    
 }
+
 .preco{
     font-family: 'Roboto';
     font-style: normal;
@@ -103,6 +114,16 @@ img{
 
 
 }
+.footbox {
+    background-color: #FFFFFF;
+    width: 435px;
+    height: 92px;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+}
+
 .finalizar{
     margin-top: 20px;
     background-color: rgb(34, 212, 34);
@@ -113,6 +134,7 @@ img{
     box-sizing: border-box;
     font-size: x-large;
     border-radius: 20px; 
+        
 }
 
 h4{
