@@ -1,5 +1,10 @@
 
-body{
+body{display: flex;
+    justify-content: center;
+    
+}
+.container{
+
     background-color: #e5e5e5;
     margin-bottom: 10px;
     text-align: center;
@@ -7,17 +12,17 @@ body{
     flex-direction: column;
     width: 414px;
     padding-top: 92px;
-    padding-bottom: 92px;
-    
+    padding-bottom: 74px;
+
+
 }
 .headbox {
     background-color: #cf2b2b;
-    width: 414px;
+    width: 393px;
     height: 92px;
     padding-left: 21px;
     position: fixed;
     z-index: 1;
-    left: 0;
     top: 0;
 
 }
@@ -48,6 +53,7 @@ h3{
     font-size: 26px;
     line-height: 32px;
     text-align: left;
+    padding-left: 21px;
 }
 .overflow{
     overflow-x: scroll;
@@ -115,13 +121,13 @@ img{
 
 }
 .footbox {
-    background-color: #FFFFFF;
-    width: 435px;
+    background-color: rgba(255, 255,255, 0.3);
+    width: 414px;
     height: 92px;
     position: fixed;
     z-index: 1;
     bottom: 0;
-    left: 0;
+    
 }
 
 .finalizar{
@@ -133,8 +139,12 @@ img{
     height: 50px;
     box-sizing: border-box;
     font-size: x-large;
-    border-radius: 20px; 
-        
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;  
 }
 
 h4{
