@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="script" href="./scripts/script.js">
     <link  class="icon" rel="shortcut icon" type="image/x-icon" href="https://uploads-ssl.webflow.com/62235d098ddf9185c2d74422/622569d790c71401f76a44cb_favicon-32.png">
@@ -27,7 +27,7 @@
     </div>
        <h3>Primeiro, seu prato</h3>
         <div class="overflow">
-            <div onclick="escolherFrango()" id="frango" class="product">
+            <div onclick="escolherFrango(), habilitarBotao()" id="frango" class="product">
                 <img src="./img/frango.jpg">
                 <h4>Frango YingYang</h4> 
                 <p class="descricao">Acompanha batata e salada</p>
@@ -90,9 +90,9 @@
             <p class="preco" >R$ 19,90</p>
         </div>
     </div>
-    <!-- botao para finalizar o pedido e chamar as funcoes js -->
+    <!-- botao para finalizar o pedido e chamar as funcoes js --> 
     <div class="footbox">
-        <button class="finalizar" id="finalizar" onclick="fecharPedido()">Fechar Pedido</button> 
+        <button class="selecione" id="finalizar" onclick="fecharPedido()" disabled>Selecione 3 itens para fechar o pedido</button> 
     </div>
     </div>
     
