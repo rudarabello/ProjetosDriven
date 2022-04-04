@@ -2,7 +2,8 @@ let prato;
 let bebida;
 let sobremesa;
 let total = 0;
-//let total = precoTotal();
+total.toFixed(2);
+
 
 function escolherFrango() {
     document.getElementById("frango").style.borderColor = "#32b72f";
@@ -10,15 +11,15 @@ function escolherFrango() {
     document.getElementById("peixe").style.borderColor = "#e5e5e5";
     prato = "Frango";
     habilitarBotao();
+    total+=19.95;
 }
-
-
 function escolherCarne() {
     document.getElementById("carne").style.borderColor = "#32b72f";
     document.getElementById("frango").style.borderColor = "#e5e5e5";
     document.getElementById("peixe").style.borderColor = "#e5e5e5";
     prato = "Carne";
     habilitarBotao();
+    total+=29.99;
 }
 function escolherPeixe() {
     document.getElementById("peixe").style.borderColor = "#32b72f";
@@ -26,6 +27,7 @@ function escolherPeixe() {
     document.getElementById("frango").style.borderColor = "#e5e5e5";
     prato = "Peixe";
     habilitarBotao();
+    total+=39.92;
 }
 function escolherCocaN() {
     document.getElementById("normal").style.borderColor = "#32b72f";
@@ -33,6 +35,7 @@ function escolherCocaN() {
     document.getElementById("laranja").style.borderColor = "#e5e5e5";
     bebida = "Coca Normal";
     habilitarBotao();
+    total+=5.91;
 }
 function escolherCocaZ() {
     document.getElementById("zero").style.borderColor = "#32b72f";
@@ -40,6 +43,7 @@ function escolherCocaZ() {
     document.getElementById("laranja").style.borderColor = "#e5e5e5";
     bebida = "Coca Zero";
     habilitarBotao();
+    total+=5.93;
 }
 function escolherSuco() {
     document.getElementById("laranja").style.borderColor = "#32b72f";
@@ -47,6 +51,7 @@ function escolherSuco() {
     document.getElementById("zero").style.borderColor = "#e5e5e5";
     bebida = "Suco de Laranja";
     habilitarBotao();
+    total+=8.95;
 }
 function escolherPetit() {
     document.getElementById("petit").style.borderColor = "#32b72f";
@@ -54,6 +59,7 @@ function escolherPetit() {
     document.getElementById("sorvete").style.borderColor = "#e5e5e5";
     sobremesa = "Petit Gateau";
     habilitarBotao();
+    total+=15.97;
 }
 function escolherBrigadeiro() {
     document.getElementById("brigadeiro").style.borderColor = "#32b72f";
@@ -61,6 +67,7 @@ function escolherBrigadeiro() {
     document.getElementById("petit").style.borderColor = "#e5e5e5";
     sobremesa = "Brigadeiro";
     habilitarBotao();
+    total+=4.95;
 }
 function escolherSorvete() {
     document.getElementById("sorvete").style.borderColor = "#32b72f";
@@ -68,6 +75,7 @@ function escolherSorvete() {
     document.getElementById("petit").style.borderColor = "#e5e5e5";
     sobremesa = "Sorvete";
     habilitarBotao();
+    total+=19.99;
 }
 
 function habilitarBotao() {
@@ -82,46 +90,10 @@ function habilitarBotao() {
 function novotexto() {
     const novoTexto = document.querySelector(".finalizar");
     novoTexto.innerHTML = "Fechar Pedido";
-    valorTotalPedido()
-    //somarpreco()
+valorTotalPedido()
+
 }
 
-
-//function somarpreco() {
-    //let precoC = Number(document.querySelector(preco1.replace("R$", "").replace(",", "."));
-    //let precoB = Number(document.querySelector(preco2.replace("R$", "").replace(",", "."));
-    //let precoS = Number(document.querySelector(preco3.replace("R$", "").replace(",", "."));
-    //let precoTotal = precoC+precoB+precoS;
-    //total += precoTotal;
-     
-//}
-
-function valorTotalPedido() {
-    let precoPrato = valorConversivel(document.querySelector(".product .prato .preco").innerHTML)
-    let precoBebida = valorConversivel(document.querySelector(".product .bebida .preco").innerHTML)
-    let precoSobremesa = valorConversivel(document.querySelector(".product .sobremesa .preco").innerHTML)
-    let precoTotal = (precoPrato+precoBebida+precoSobremesa)
-    return precoTotal.toFixed(2)
-
-function valorConversivel(string) {
-    let numero = ''
-    for (let i = 0; i < string.length; i++) {
-      if (string[i] === ',') {
-        numero += '.'
-      }
-      else if (string[i] === 'R') {
-        numero += ''
-      }
-      else if (string[i] === '$') {
-        numero += ''
-      }
-      else {
-        numero += string[i]
-      }
-    }
-    return Number(numero)
-  }
-}
 
 function fecharPedido() {
     const uri = `Olá, gostaria de fazer o pedido:
