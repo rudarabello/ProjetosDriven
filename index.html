@@ -27,72 +27,72 @@
     </div>
        <h3>Primeiro, seu prato</h3>
         <div class="overflow">
-            <div onclick="escolherFrango(), habilitarBotao()" id="frango" class="product">
+            <div onclick="escolherFrango(this)" id="frango" class="product prato">
                 <img src="./img/frango.jpg">
                 <h4>Frango YingYang</h4> 
-                <p class="descricao">Acompanha batata e salada</p>
+                <div class="descricao">Acompanha batata e salada</div>
                 <p class="preco">R$ 19,90</p>
             </div>
     
-        <div onclick="escolherCarne()" id="carne" class="product" >
+        <div onclick="escolherCarne()" id="carne" class="product prato" >
             <img src="./img/carne.jpg">
             <h4>Carne e salada</h4> 
-            <p class="descricao">Um bife ao ponto com salada</p>
+            <div class="descricao">Um bife ao ponto com salada</div>
             <p class="preco">R$ 29,90</p>
         </div>
-        <div onclick="escolherPeixe()" id="peixe" class="product" >
+        <div onclick="escolherPeixe()" id="peixe" class="product prato" >
             <img src="./img/peixe.jpeg">
             <h4>Peixe do mar!</h4> 
-            <p class="descricao">Acompanha arroz e salada</p>
+            <div class="descricao">Acompanha arroz e salada</div>
             <p class="preco">R$ 39,90</p>
         </div>
     </div>
         
         <h3>Agora sua bebida</h3>
     <div class="overflow">
-        <div onclick="escolherCocaN()" id="normal" class="product">
+        <div onclick="escolherCocaN()" id="normal" class="product bebida">
             <img src="./img/cocaNormal.jpg">
             <h4>Coca-cola gelada</h4> 
-            <p class="descricao">Normal</p>
-            <p class="precp">R$ 5,90</p>
-        </div>
-        <div onclick="escolherCocaZ()" id="zero" class="product">
-            <img src="./img/cocaZero.jpg">
-            <h4>Coca-cola gelada</h4> 
-            <p class="descricao">Zero</p>
+            <div class="descricao">Normal</div>
             <p class="preco">R$ 5,90</p>
         </div>
-        <div onclick="escolherSuco()" id="laranja" class="product" >
+        <div onclick="escolherCocaZ()" id="zero" class="product bebida">
+            <img src="./img/cocaZero.jpg">
+            <h4>Coca-cola gelada</h4> 
+            <div class="descricao">Zero</div>
+            <p class="preco">R$ 5,90</p>
+        </div>
+        <div onclick="escolherSuco()" id="laranja" class="product bebida" >
             <img src="./img/sucoLaranja.jpg">
             <h4>Suco de Laranja</h4> 
-            <p class="descricao">Feito na hora para você</p>
+            <div class="descricao">Feito na hora para você</div>
             <p class="preco">R$ 8,90</p>
         </div>
     </div>
         <h3>Hora da Sobremesa</h3>
         <div class="overflow">
-        <div onclick="escolherPetit()" id="petit" class="product">
+        <div onclick="escolherPetit()" id="petit" class="product sobremesa">
             <img src="./img/petitGateau.jpg">
             <h4>Petit Gateau</h4> 
-            <p class="descricao">Sabor chocolate</p>
+            <div class="descricao">Sabor chocolate</div>
             <p class="preco" >R$ 15,90</p>
         </div>
-        <div onclick="escolherBrigadeiro()" id="brigadeiro" class="product">
+        <div onclick="escolherBrigadeiro()" id="brigadeiro" class="product sobremesa">
             <img src="./img/brigadeiro.jpg">
             <h4>Brigadeiro</h4> 
-            <p class="descricao">Deliciosamente suculento</p>
+            <div class="descricao">Deliciosamente suculento</div>
             <p class="preco" >R$ 4,90</p>
         </div>
-        <div onclick="escolherSorvete()" id="sorvete" class="product">
+        <div onclick="escolherSorvete()" id="sorvete" class="product sobremesa">
             <img src="./img/sorvete.jpeg">
             <h4>Sorvete Beeelga</h4> 
-            <p class="descricao">Sabor chocolate</p>
+            <div class="descricao">Sabor chocolate</div>
             <p class="preco" >R$ 19,90</p>
         </div>
     </div>
     <!-- botao para finalizar o pedido e chamar as funcoes js --> 
     <div class="footbox">
-        <button class="selecione" id="finalizar" onclick="fecharPedido()" disabled>Selecione 3 itens para fechar o pedido</button> 
+        <button onclick="fecharPedido()" class="selecione" id="finalizar" disabled >Selecione 3 itens para fechar o pedido</button> 
     </div>
     </div>
     

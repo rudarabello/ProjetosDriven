@@ -1,7 +1,8 @@
 let prato;
 let bebida;
 let sobremesa;
-
+let total = 0;
+//let total = precoTotal();
 
 function escolherFrango() {
     document.getElementById("frango").style.borderColor = "#32b72f";
@@ -9,8 +10,9 @@ function escolherFrango() {
     document.getElementById("peixe").style.borderColor = "#e5e5e5";
     prato = "Frango";
     habilitarBotao();
-    
 }
+
+
 function escolherCarne() {
     document.getElementById("carne").style.borderColor = "#32b72f";
     document.getElementById("frango").style.borderColor = "#e5e5e5";
@@ -77,104 +79,60 @@ function habilitarBotao() {
         novotexto()
     }
 }
-function novotexto(){
+function novotexto() {
     const novoTexto = document.querySelector(".finalizar");
     novoTexto.innerHTML = "Fechar Pedido";
-   
+    valorTotalPedido()
+    //somarpreco()
 }
 
 
-function fecharPedido(){
-  alert(teste);
-  const mensagem = `Olá, gostaria de fazer o pedido:\n
-  - Prato: ${prato}\n
-  - Bebida: ${bebida}\n
-  - Sobremesa: ${sobremesa}\n\n
-  Total: ${total}`;
-    const uri = encodeURIComponent(mensagem);
-  window.open(`https://wa.me/5512988635939?text=${uri}`);
+//function somarpreco() {
+    //let precoC = Number(document.querySelector(preco1.replace("R$", "").replace(",", "."));
+    //let precoB = Number(document.querySelector(preco2.replace("R$", "").replace(",", "."));
+    //let precoS = Number(document.querySelector(preco3.replace("R$", "").replace(",", "."));
+    //let precoTotal = precoC+precoB+precoS;
+    //total += precoTotal;
+     
+//}
+
+function valorTotalPedido() {
+    let precoPrato = valorConversivel(document.querySelector(".product .prato .preco").innerHTML)
+    let precoBebida = valorConversivel(document.querySelector(".product .bebida .preco").innerHTML)
+    let precoSobremesa = valorConversivel(document.querySelector(".product .sobremesa .preco").innerHTML)
+    let precoTotal = (precoPrato+precoBebida+precoSobremesa)
+    return precoTotal.toFixed(2)
+
+function valorConversivel(string) {
+    let numero = ''
+    for (let i = 0; i < string.length; i++) {
+      if (string[i] === ',') {
+        numero += '.'
+      }
+      else if (string[i] === 'R') {
+        numero += ''
+      }
+      else if (string[i] === '$') {
+        numero += ''
+      }
+      else {
+        numero += string[i]
+      }
+    }
+    return Number(numero)
+  }
+}
+
+function fecharPedido() {
+    const uri = `Olá, gostaria de fazer o pedido:
+  - Prato: ${prato}
+  - Bebida: ${bebida}
+  - Sobremesa: ${sobremesa}
+  Total: R$ ${total}`
+
+    const uriEncoded = encodeURIComponent(uri);
+    window.open(`https://wa.me/5512988635939?text=${uriEncoded}`, '_blank');
 }
 
 
 
-
-
-
-
-
-
-
-/*var pedido ="";
-var quantFrango = 0;
-var quantCarne =0;
-var quantCocaNormal =0;
-var quantCocaZero =0;
-var quantSucoLaranja =0;
-var quantPetitGateau =0;
-var quantBrigadeiro =0;
-
-function fecharPedido(){
-    alert(pedido);
-
-}
-function addFrango(){
-pedido += " + 1 x Frango";
-updateDisplayF(++quantFrango);
-
-}
-function decFrango(){
-pedido += " - 1 x Frango";
-updateDisplayF(--quantFrango);
-}
-function updateDisplayF(quantFrango){
-document.getElementById("frango").innerHTML = quantFrango;        
-}
-/*function addCarne(){
-pedido += " + 1 x Frango";
-quantFrango += 1;
-}
-function decCarne(){
-pedido += " - 1 x Frango";
-quantFrango -= 1;
-}
-function addCocaNormal(){
-pedido += " + 1 x Frango";
-quantFrango += 1;
-}
-function decCocaNormal(){
-pedido += " - 1 x Frango";
-quantFrango -= 1;
-}
-function addCocaZero(){
-pedido += " + 1 x Frango";
-quantFrango += 1;
-}
-function decCocaZero(){
-pedido += " - 1 x Frango";
-quantFrango -= 1;
-}
-function addSucoLaranja(){
-pedido += " + 1 x Frango";
-quantFrango += 1;
-}
-function decSucoLaranaja(){
-pedido += " - 1 x Frango";
-quantFrango -= 1;
-} 
-function addPetitGateau(){
-pedido += " + 1 x Frango";
-quantFrango += 1;
-}
-function decPetitGateau(){
-pedido += " - 1 x Frango";
-quantFrango -= 1;
-}
-function addBrigadeiro(){
-pedido += " + 1 x Frango";
-quantFrango += 1;
-}
-function decBrigadeiro(){
-pedido += " - 1 x Frango";
-quantFrango -= 1;
-}
-*/
